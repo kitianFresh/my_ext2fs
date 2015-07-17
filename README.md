@@ -1,4 +1,5 @@
-仿真一个ext2文件系统。
+# my_ext2fs
+一个ext2文件系统仿真（a ext2 filesystem simulation）
 
 建立一个9220KB的文件在当前目录下，用这个文件模拟磁盘。
 dd if=/dev/zero of=./disk bs=1K count=9220
@@ -19,5 +20,4 @@ block : 8M (共8*1024个block)
 由于在open中使用了 O_CREAT标志，所以上面用dd命令建立disk文件的步骤可以省略。
 
 在 include/file.h 中添加了 其他结构体。暂时不使用的结构体用空结构体补全。
-# my_ext2fs
-一个ext2文件系统仿真（a ext2 filesystem simulation）
+
